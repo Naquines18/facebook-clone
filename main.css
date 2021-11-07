@@ -1,0 +1,307 @@
+:root {
+  --main-bgColor: #252426;
+  --main-Color: #b0b3b8;
+  --main-IconColor: #3a3a3d;
+
+  --aqua-bgColor: #2f88ff;
+  --yellow-bgColor: #f7b829;
+  --green-bgColor: #45bc63;
+  --red-bgColor: #f2435f;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #18181b;
+  font-family: "Poppins", sans-serif;
+}
+
+.textWhite {
+  color: var(--main-Color) !important;
+}
+
+.bgDark {
+  background-color: #252426;
+}
+a {
+  text-decoration: none;
+  color: var(--main-Color);
+}
+
+.logo-style {
+  max-width: 60px;
+  padding: 0px;
+  margin-left: 0px;
+  height: auto;
+}
+
+.navbar {
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+.bi {
+  font-size: 1.2rem;
+  line-height: normal;
+  color: #e4e7ea;
+}
+
+.bgIcons {
+  padding: 5px 12px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a3a3d;
+  line-height: 10px;
+  border-radius: 5px;
+}
+
+.bgIcons:hover {
+  border-bottom: 2px solid #2f88ff;
+}
+
+.nav-wrapper {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.active {
+  color: #2f88ff;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.storie-post {
+  width: 50%;
+  position: relative;
+  text-align: center;
+}
+
+.storie-post img {
+  width: 120px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #2f88ff;
+}
+
+.storie-post span {
+  position: absolute;
+  z-index: 1000;
+  color: #e4e7ea;
+  left: -0.1rem;
+  bottom: 1rem;
+  right: -0.1rem;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+}
+
+.create-story-button {
+  position: absolute;
+  z-index: 1000;
+  left: -0.1rem;
+  bottom: 3rem;
+  right: -0.1rem;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  line-break: auto;
+  cursor: pointer;
+}
+
+.create-story-button:hover {
+  color: #2f88ff;
+  font-weight: 300;
+  background-color: #252426;
+  width: 50%;
+  left: 2rem;
+  bottom: 3rem;
+  right: 1rem;
+  border-radius: 10px;
+  transition: ease-in;
+}
+
+.addposts {
+  padding: 20px 30px;
+  background-color: #252426;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.user-form img {
+  width: 55px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.user-form input {
+  width: 100%;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  background-color: #3a3a3d;
+  padding-left: 0.9rem;
+  cursor: pointer;
+}
+
+.icons-form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  color: #e4e7ea;
+}
+
+.posts {
+  margin-top: 10px;
+  width: 550px;
+  height: 300px;
+  background-color: #3a3a3d;
+  border-radius: 10px;
+  margin-bottom: 23rem;
+}
+
+.card-user-post-desc p {
+  color: #e4e7ea;
+  padding: 3px 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card-post {
+  width: 100%;
+}
+
+.img-preview img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-post-header {
+  padding: 10px;
+  border-radius: 15px 15px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.user-info span {
+  color: #e4e7ea;
+  font-size: 16px;
+  font-weight: 300;
+  margin: none;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.user-info-post {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.card-post-footer {
+  background-color: #3a3a3d;
+  padding: 0rem 2rem;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.card-buttons .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #3a3a3d;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+.card-buttons .buttons:hover {
+  background-color: #4a4a4b;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+.card-buttons .buttons span {
+  color: #e4e7ea;
+}
+
+.post-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.count,
+.reaction {
+  display: inline-block;
+  padding: 10px;
+}
+
+.count span {
+  color: #e4e7ea;
+}
+
+.reaction img {
+  width: 19px;
+  margin: 0;
+  cursor: pointer;
+  margin: -4px;
+}
